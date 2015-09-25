@@ -17,7 +17,7 @@
  * along with plasma-simpleMonitor.  If not, see <http://www.gnu.org/licenses/>.
  **/
 
-import QtQuick 1.1
+import QtQuick 2.0
 
 Item {
     id: datePicker
@@ -33,7 +33,7 @@ Item {
         id: playRegular
         source: "../fonts/Play/Play-Regular.ttf"
     }
-    
+
     Text {
         id: dayName
         text: "mie"

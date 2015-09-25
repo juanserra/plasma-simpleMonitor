@@ -17,8 +17,8 @@
  * along with plasma-simpleMonitor.  If not, see <http://www.gnu.org/licenses/>.
  **/
 
-import QtQuick 1.1
-import org.kde.plasma.core 0.1 as PlasmaCore
+import QtQuick 2.0
+import org.kde.plasma.core 2.0 as PlasmaCore
 import "monitorWidgets/js/monitorActions.js" as MonitorActions
 import "monitorWidgets"
 
