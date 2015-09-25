@@ -1,7 +1,7 @@
 Simple Monitor for Plasma
 =========================
 
-A simple monitor for plasma, completely written in QML and Javascript. 
+A simple monitor for plasma, completely written in QML and Javascript.
 
 Packaging
 =========
@@ -19,14 +19,14 @@ Installation
 
 In KDE you can use asistant for installation.
 
-In a terminal you can use plasmapkg command:
+In a terminal you can use plasmapkg2 command:
 ````Shell
-$ plasmapkg -i plasma-simpleMonitor.plasmoid
+$ plasmapkg2 -i plasma-simpleMonitor.plasmoid
 ````
 
 If you want update:
 ````Shell
-$ plasmapkg -u plasma-simpleMonitor.plasmoid
+$ plasmapkg2 -u plasma-simpleMonitor.plasmoid
 ````
 
 License
