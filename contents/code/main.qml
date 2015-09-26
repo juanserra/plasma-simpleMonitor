@@ -241,7 +241,7 @@ Window {
         }
         Component.onDestruction: {
             interval = 0
-            for (i in connectedSources) {
+            for (var i in connectedSources) {
                 console.log("discconect: "+connectedSources[0])
                 disconnectSource(connectedSources[0])
             }

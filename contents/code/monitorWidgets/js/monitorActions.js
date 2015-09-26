@@ -48,7 +48,7 @@ function parseOsRelease(text){
         }
     }
 
-    for (i in arrayResult)
+    for (var i in arrayResult)
         console.log(arrayResult[i])
     return arrayResult
 }
@@ -75,7 +75,7 @@ function getLogoInfo() {
     var distrosLogoNames = ["logoTux", "logoTuz",
                             "logoSlackware", "logoUbuntu",
                             "logoKubuntu"]
-    for (i in distrosLogoNames) {
+    for (var i in distrosLogoNames) {
         if (plasmoid.readConfig(distrosLogoNames[i]) == true) {
             return distrosLogoNames[i].replace("logo","").toLowerCase()
         }
