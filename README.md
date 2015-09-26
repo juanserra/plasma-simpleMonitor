@@ -9,7 +9,7 @@ Packaging
 Simple way for make plasmoid package:
 
 ````Shell
-$ git clone https://github.com/dhabyx/plasma-simpleMonitor.git plasma-simpleMonitor
+$ git clone https://github.com/sahumada/plasma-simpleMonitor.git plasma-simpleMonitor
 $ cd plasma-simpleMonitor
 $ zip -r plasma-simpleMonitor.plasmoid contents icon.svg metadata.desktop
 ````
