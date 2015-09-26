@@ -7,7 +7,7 @@ Comment[es]=Monitor de Sistema simple para Plasma
 Icon=icon.svg
 
 X-Plasma-API=declarativeappletscript
-X-Plasma-MainScript=code/main.qml
+X-Plasma-MainScript=ui/main.qml
 X-Plasma-DefaultSize=370,360
 
 X-KDE-PluginInfo-Author=DhabyX

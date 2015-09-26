@@ -76,23 +76,24 @@ function getLogoInfo() {
                             "logoSlackware", "logoUbuntu",
                             "logoKubuntu"]
     for (var i in distrosLogoNames) {
-        if (plasmoid.readConfig(distrosLogoNames[i]) == true) {
-            return distrosLogoNames[i].replace("logo","").toLowerCase()
+        if (plasmoid.configuration[distrosLogoNames[i]] == true) {
+			return distrosLogoNames[i].replace("logo","").toLowerCase()
         }
     }
 }
 
 function configListener() {
-    if (plasmoid.readConfig("standard") == true)
+    if (plasmoid.configuration.standard == true)
         plasmoid.setBackgroundHints(StandardBackground)
-    else if (plasmoid.readConfig("crystal") == true)
+    else if (plasmoid.configuration.crystal == true)
         plasmoid.setBackgroundHints(NoBackground)
-    else if (plasmoid.readConfig("translucent") == true)
+    else if (plasmoid.configuration.translucent == true)
+		console.log("ee ", plasmoid.configuration.translucent)
         plasmoid.setBackgroundHints(TranslucentBackground)
     distroLogo.source = "monitorWidgets/images/distro-"+getLogoInfo()+".png"
-    swapArea.visible=plasmoid.readConfig("showSwap")
-    uptimePicker.visible=plasmoid.readConfig("showUptime")
-    coreTempList.highTemp =plasmoid.readConfig("cpuHighTemp")
-    coreTempList.criticalTemp =plasmoid.readConfig("cpuCritTemp")
-    coreTempList.tempUnit = plasmoid.readConfig("fahrenheit")
+    swapArea.visible=plasmoid.configuration.showSwap
+    uptimePicker.visible=plasmoid.configuration.showUptime
+    coreTempList.highTemp =plasmoid.configuration.cpuHighTemp
+    coreTempList.criticalTemp =plasmoid.configuration.cpuCritTemp
+    coreTempList.tempUnit = plasmoid.configuration.fahrenheit
 }

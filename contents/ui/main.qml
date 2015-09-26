@@ -18,12 +18,12 @@
  **/
 
 import QtQuick 2.0
-import QtQuick.Window 2.0
+import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.core 2.0 as PlasmaCore
 import "monitorWidgets/js/monitorActions.js" as MonitorActions
 import "monitorWidgets"
 
-Window {
+Rectangle {
     width: 370
     height: 360
     color: "transparent"
@@ -34,6 +34,8 @@ Window {
 
     // control for atk sensor
     property bool atkPresent:false
+
+    Plasmoid.backgroundHints: "NoBackground"
 
     Image {
         id: distroLogo
@@ -160,7 +162,7 @@ Window {
                 if (!atkPresent)
                 for (i in connectedSources) {
                     if (i.match("^lmsensors/k\\d+temp-pci-.+/temp\\d+")) {
-                        console.log("discconect: "+i)
+                        console.log("disconnect: "+i)
                         disconnectSource(i)
                         coreTempModel.clear()
                     }
@@ -242,7 +244,7 @@ Window {
         Component.onDestruction: {
             interval = 0
             for (var i in connectedSources) {
-                console.log("discconect: "+connectedSources[0])
+                console.log("disconnect: "+connectedSources[0])
                 disconnectSource(connectedSources[0])
             }
         }
@@ -253,7 +255,7 @@ Window {
         if (MonitorActions.getLogoInfo() != "tux") {
             distroLogo.source = "monitorWidgets/images/distro-"+MonitorActions.getLogoInfo()+".png"
         }
-        plasmoid.addEventListener('ConfigChanged', MonitorActions.configListener)
+//        plasmoid.addEventListener('ConfigChanged', MonitorActions.configListener)
     }
 
 }

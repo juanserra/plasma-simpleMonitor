@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
     <kcfgfile name=""/>
@@ -8,7 +8,7 @@
         <!-- Background Section -->
         <entry name="standard" type="Bool">
             <label>Distribution logo choice</label>
-            <default>true</default>
+            <default>false</default>
         </entry>
         <entry name="crystal" type="Bool">
             <label>Distribution logo choice</label>
@@ -16,12 +16,12 @@
         </entry>
         <entry name="translucent" type="Bool">
             <label>Distribution logo choice</label>
-            <default>false</default>
+            <default>true</default>
         </entry>
         <!-- Logos Section -->
         <entry name="logoTux" type="Bool">
             <label>Distribution logo choice</label>
-            <default>true</default>
+            <default>false</default>
         </entry>
         <entry name="logoTuz" type="Bool">
             <label>Distribution logo choice</label>
@@ -37,9 +37,9 @@
         </entry>
         <entry name="logoKubuntu" type="Bool">
             <label>Distribution logo choice</label>
-            <default>false</default>
+            <default>true</default>
         </entry>
-        
+
         <!-- Displays Section -->
         <entry name="showSwap" type="Bool">
             <label>Show Swap Secction</label>
@@ -49,7 +49,7 @@
             <label>Show Swap Secction</label>
             <default>true</default>
         </entry>
-	<entry name="fahrenheit" type="Bool">
+        <entry name="fahrenheit" type="Bool">
             <label>Use Celsius degrees</label>
             <default>false</default>
         </entry>
@@ -63,6 +63,6 @@
             <label>CPU Critical Temp</label>
             <default>105</default>
         </entry>
-        
+
     </group>
 </kcfg>
