@@ -18,15 +18,16 @@
  **/
 
 import QtQuick 2.0
+import QtQuick.Window 2.0
 import org.kde.plasma.core 2.0 as PlasmaCore
 import "monitorWidgets/js/monitorActions.js" as MonitorActions
 import "monitorWidgets"
 
-Rectangle {
+Window {
     width: 370
     height: 360
-
     color: "transparent"
+
     property int minimumWidth: 240
     property int minimumHeight: 340
     //color: "black"
