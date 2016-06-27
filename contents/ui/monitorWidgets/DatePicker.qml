@@ -59,7 +59,7 @@ Item {
         id: monthName
         text: "dic"
         anchors.left: dayNumber.right
-        y:45
+        y:30
         font {
             family: playBold.name
             capitalization: Font.AllUppercase
@@ -71,7 +71,7 @@ Item {
         id: hour
         text: "00:"
         anchors.left: dayNumber.right
-        y:60
+        y:45
         font {
             family: playRegular.name
             pointSize: 30
@@ -82,7 +82,7 @@ Item {
         id: mins
         text: "00"
         anchors.left: hour.right
-        y: 72
+        y: 57
         font {
             family: playRegular.name
             pointSize: 20
@@ -93,7 +93,7 @@ Item {
         id: secs
         text: "00"
         anchors.left: mins.right
-        y: 78
+        y: 63
         font {
             family: playRegular.name
             pointSize: 15
