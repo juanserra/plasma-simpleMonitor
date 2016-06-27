@@ -40,7 +40,7 @@ Rectangle {
     Image {
         id: distroLogo
         source: "monitorWidgets/images/distro-tux.png"
-        y: 73
+        y: 85
         anchors.horizontalCenter: osInfoItem.horizontalCenter
     }
 
@@ -56,7 +56,7 @@ Rectangle {
         color: "white"
         y: 102
         x: 108
-        height: 3
+        height: 0
         width: parent.width-x-5
     }
 
