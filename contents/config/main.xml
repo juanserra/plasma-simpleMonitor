@@ -21,7 +21,7 @@
         <!-- Logos Section -->
         <entry name="logoTux" type="Bool">
             <label>Distribution logo choice</label>
-            <default>false</default>
+            <default>true</default>
         </entry>
         <entry name="logoTuz" type="Bool">
             <label>Distribution logo choice</label>
@@ -37,7 +37,7 @@
         </entry>
         <entry name="logoKubuntu" type="Bool">
             <label>Distribution logo choice</label>
-            <default>true</default>
+            <default>false</default>
         </entry>
 
         <!-- Displays Section -->
